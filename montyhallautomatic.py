@@ -70,7 +70,8 @@ def jouer(number_of_play : int):
 
         print("Pourcentage victoire :", round((win_count/number_of_play)*100),"%")
         print("Pourcentage défaite :", round((lose_count/number_of_play)*100),"%")
-
+    else:
+        print("Ecrivez 1 ou 2 pour le choix de l'IA")
 
 number_of_play = int(input("cb de parties ? "))
 jouer(number_of_play)
