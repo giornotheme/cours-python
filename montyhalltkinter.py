@@ -1,11 +1,24 @@
-import tkinter as tk
-from tkinter import *
+from tkinter import * 
 
-root = tk.Tk()
+fenetre = Tk()
 
-w = Canvas(root, width=250, height=200)
-w.create_rectangle(0, 0, 100, 100, fill="blue", outline = 'blue')
-w.create_rectangle(100, 100, 0, 0, fill="red", outline = 'blue') 
-w.pack()
+fenetre['bg']='white'
 
-root.mainloop()
+# button 1
+button1 = Button(fenetre, borderwidth=2, relief=GROOVE)
+button1.pack(side=LEFT)
+
+# button 2
+button2 = Button(fenetre, borderwidth=2, relief=GROOVE)
+button2.pack(side=LEFT)
+
+# button 3
+button3 = Button(fenetre, borderwidth=2, relief=GROOVE)
+button3.pack(side=RIGHT)
+
+# Ajout de labels
+Label(button1, text="Boite 1").pack(padx=10, pady=10)
+Label(button2, text="Boite 2").pack(padx=10, pady=10)
+Label(button3, text="Boite 3",bg="white").pack(padx=10, pady=10)
+
+fenetre.mainloop()
